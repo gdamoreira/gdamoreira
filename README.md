@@ -8,7 +8,7 @@
 
 Senior Software Engineer at Beyonnex.io, based in Barcelona. For 15+ years I have been designing and building scalable systems — from banking and government platforms to security tooling and 3D automation pipelines. Today I work on a platform that calculates real-time heating consumption and costs for buildings, replacing manual processes with IoT-driven, event-based calculation built on Kotlin, Quarkus and Kafka.
 
-Some highlights from my career: I helped transform a small Brazilian startup (Decora) into a market leader by architecting the core of a 3D automation platform that scaled the company from 15 to 150+ people and led to Brazil's second-largest tech acquisition at the time. At Oracle I worked as a Senior Application Security Engineer, building internal tooling that automated code and static analysis. I also served as CTO of Reticomm and hold two postgraduate degrees — an MBA in Project Management and a degree in Data Science.
+Some highlights from my career: I helped transform a small Brazilian startup (Decora) into a market leader by architecting the core of a 3D automation platform that scaled the company from 15 to 150+ people and led to Brazil's second-largest tech acquisition at the time. At Oracle I worked as a Senior Application Security Engineer, building internal tooling that automated code and static analysis. I also served as CTO of Reticomm and hold two postgraduate degrees — an MBA in Project Management and an MBA in Data Science.
 
 ---
 
