@@ -6,7 +6,7 @@
 
 [![Open to Staff, Tech Lead and Architect roles](https://img.shields.io/badge/Open_to-Staff_%7C_Tech_Lead_%7C_Architect_roles-brightgreen?style=for-the-badge)](https://www.linkedin.com/in/gdamoreira)
 
-Staff-level software engineer and technical leader based in Barcelona, open to remote. For 15+ years I have designed, scaled and secured distributed backend platforms across PropTech, cybersecurity, FinTech and enterprise SaaS, owning the architecture end to end.
+Senior software engineer and technical leader based in Barcelona, open to remote. For 15+ years I have designed, scaled and secured distributed backend platforms across PropTech, cybersecurity, FinTech and enterprise SaaS, owning the architecture end to end.
 
 My home ground is event-driven systems on the JVM: Kotlin and Java, Quarkus and Spring Boot, Apache Kafka and PostgreSQL, running on AWS and Kubernetes. I also spent more than three years as an application security engineer at Oracle, so threat modeling, static analysis and a secure SDLC are part of how I design systems, not a review at the end.
 
