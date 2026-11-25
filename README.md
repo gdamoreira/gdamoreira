@@ -1,14 +1,44 @@
 # Hi, I'm Guilherme
 
-### Senior Software Engineer | Java & Kotlin | Cloud, APIs & Application Security
+### Staff / Senior Software Engineer | Distributed Systems Architecture & Application Security
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=339933&center=true&vCenter=true&width=800&lines=Senior+Software+Engineer+%40+Beyonnex.io;15%2B+years+building+scalable+systems;Java+%7C+Kotlin+%7C+Spring+Boot+%7C+Quarkus;Cloud+%7C+Kubernetes+%7C+AWS;Application+Security+%26+DevOps)](https://readme-typing-svg.demolab.com)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=339933&center=true&vCenter=true&width=800&lines=Staff+%2F+Senior+Software+Engineer;15%2B+years+designing+distributed+backend+platforms;Kotlin+%7C+Java+%7C+Quarkus+%7C+Spring+Boot+%7C+Kafka;Event-driven+architecture+%7C+CQRS+%7C+gRPC;Application+Security+%26+DevSecOps;Creator+of+Snodra)](https://readme-typing-svg.demolab.com)
 
-[![Open to challenges](https://img.shields.io/badge/Open_to_challenges-brightgreen?style=for-the-badge)](https://www.linkedin.com/in/gdamoreira)
+[![Open to Staff, Tech Lead and Architect roles](https://img.shields.io/badge/Open_to-Staff_%7C_Tech_Lead_%7C_Architect_roles-brightgreen?style=for-the-badge)](https://www.linkedin.com/in/gdamoreira)
 
-Senior Software Engineer at Beyonnex.io, based in Barcelona. For 15+ years I have been designing and building scalable systems — from banking and government platforms to security tooling and 3D automation pipelines. Today I work on a platform that calculates real-time heating consumption and costs for buildings, replacing manual processes with IoT-driven, event-based calculation built on Kotlin, Quarkus and Kafka.
+Staff-level software engineer and technical leader based in Barcelona, open to remote. For 15+ years I have designed, scaled and secured distributed backend platforms across PropTech, cybersecurity, FinTech and enterprise SaaS, owning the architecture end to end.
 
-Some highlights from my career: I helped transform a small Brazilian startup (Decora) into a market leader by architecting the core of a 3D automation platform that scaled the company from 15 to 150+ people and led to Brazil's second-largest tech acquisition at the time. At Oracle I worked as a Senior Application Security Engineer, building internal tooling that automated code and static analysis. I also served as CTO of Reticomm and hold two postgraduate degrees — an MBA in Project Management and an MBA in Data Science.
+My home ground is event-driven systems on the JVM: Kotlin and Java, Quarkus and Spring Boot, Apache Kafka and PostgreSQL, running on AWS and Kubernetes. I also spent more than three years as an application security engineer at Oracle, so threat modeling, static analysis and a secure SDLC are part of how I design systems, not a review at the end.
+
+---
+
+## Career highlights
+
+- **A US$100 million exit.** Tech lead on the 3D production platform that took Decora from about 15 people to over 150 and to its acquisition by CreativeDrive, the second-largest Brazilian tech deal of 2018.
+- **Real-time platform architecture.** At Beyonnex I architected and led the IoT ingestion and calculation pipelines that turn continuous meter telemetry into heating consumption and billing for German real estate portfolios, replacing manual batch processes.
+- **Security built into engineering.** At Oracle (NetSuite) I architected the internal static analysis and code-auditing tools that sped up vulnerability detection across large enterprise codebases, and mentored engineering teams on secure design.
+- **Platform ownership in cybersecurity.** Led end-to-end architecture and delivery of Phoenix Security's enterprise ASPM platform.
+- **Executive experience.** CTO of Reticomm for two years: engineering strategy, cloud infrastructure and product delivery.
+- **Credentials.** Postgraduate degree in Data Science Engineering, MBA in Project Management, and three Black Hat certifications in API security, security automation and malware analysis.
+
+---
+
+## Featured project: Snodra
+
+**[Snodra](https://snodra.damoreira.com)** is an open-source messaging stack for services that speak events and gRPC. It gives a service fleet commands, queries, events and sagas over the gRPC and Kafka it already runs, with no broker in the request path, no proprietary event store and no per-node licence. I design and maintain the whole project, from the wire protocol to the documentation.
+
+| Repository | What it is | Language |
+|---|---|---|
+| [snodra-server](https://github.com/snodra/snodra-server) | Stateless gRPC router and control plane. It stores nothing and queues nothing, so every instance is independent. | Rust |
+| [snodra-messaging](https://github.com/snodra/snodra-messaging) | Client library with a Spring Boot starter, published to Maven Central | Kotlin |
+| [snodra-messaging-rs](https://github.com/snodra/snodra-messaging-rs) | Client library, published to crates.io | Rust |
+| [snodra-messaging-go](https://github.com/snodra/snodra-messaging-go) | Client library | Go |
+| [snodra-conformance](https://github.com/snodra/snodra-conformance) | Conformance suite that checks every client against a real server, so the protocol is the stable contract | Rust |
+| [snodra-event-browser](https://github.com/snodra/snodra-event-browser) | Read-only event browser add-on for the dashboard | Rust |
+
+Events go through a transactional outbox, in the same database transaction as the state they describe. Stores are pluggable (Kafka or RabbitMQ Streams for events; PostgreSQL, MySQL or MongoDB for messages), and security covers static tokens, OAuth2/OIDC JWT and mTLS with per-service ACLs. Pre-1.0, Apache-2.0.
+
+[![Snodra site](https://img.shields.io/badge/snodra.damoreira.com-1a1033?style=for-the-badge&logo=googlechrome&logoColor=white)](https://snodra.damoreira.com) [![Snodra on GitHub](https://img.shields.io/badge/github.com%2Fsnodra-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/snodra)
 
 ---
 
@@ -20,15 +50,15 @@ Some highlights from my career: I helped transform a small Brazilian startup (De
 
 ### Messaging & Architecture
 
-[![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white) [![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white) [![REST APIs](https://img.shields.io/badge/REST_APIs-005571?style=for-the-badge&logo=openapiinitiative&logoColor=white)](https://img.shields.io/badge/REST_APIs-005571?style=for-the-badge&logo=openapiinitiative&logoColor=white)
+[![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white) [![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white) [![REST APIs](https://img.shields.io/badge/REST_APIs-005571?style=for-the-badge&logo=openapiinitiative&logoColor=white)](https://img.shields.io/badge/REST_APIs-005571?style=for-the-badge&logo=openapiinitiative&logoColor=white) [![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=for-the-badge&logo=grpc&logoColor=white)](https://img.shields.io/badge/gRPC-244C5A?style=for-the-badge&logo=grpc&logoColor=white) [![CQRS](https://img.shields.io/badge/CQRS_%26_Event--Driven-4E4B66?style=for-the-badge)](https://img.shields.io/badge/CQRS_%26_Event--Driven-4E4B66?style=for-the-badge)
 
 ### Cloud & DevOps
 
-[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white) [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) [![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white) [![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white) [![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white) [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white) [![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white) [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white) [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) [![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white) [![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white) [![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white) [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ### Databases
 
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) [![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white) [![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) [![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white) [![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 
 ### Frontend
 
@@ -42,11 +72,11 @@ Some highlights from my career: I helped transform a small Brazilian startup (De
 
 ## What I do
 
-- **Backend & APIs**: microservices and event-driven systems with Java, Kotlin, Spring Boot and Quarkus
-- **Cloud & Infrastructure**: AWS, Docker and Kubernetes, from design to production
-- **Application Security**: secure code reviews, static analysis automation and vulnerability management
-- **Data**: modeling and optimization with PostgreSQL, MongoDB, Redis and Oracle
-- **Leadership**: leading cross-functional teams with Agile and PMBOK practices
+- **Architecture**: distributed systems, microservices, event-driven architecture (CQRS), Domain-Driven Design and REST/gRPC APIs, designed for high availability
+- **Backend platforms**: Kotlin, Java, Quarkus and Spring Boot services with Apache Kafka and PostgreSQL
+- **Cloud & delivery**: AWS, Docker, Kubernetes and Terraform, with CI/CD from commit to production
+- **Application security**: ASPM, SAST/DAST automation, threat modeling, API security and a secure SDLC
+- **Technical leadership**: technical strategy, cross-team architecture alignment, engineering standards and mentoring
 
 ---
 
@@ -56,7 +86,7 @@ Some highlights from my career: I helped transform a small Brazilian startup (De
 
 ## Get in touch
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gdamoreira) [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:guilherme@damoreira.com.br) [![Website](https://img.shields.io/badge/damoreira.com.br-000000?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.damoreira.com.br)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gdamoreira) [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:guilherme@damoreira.com) [![Website](https://img.shields.io/badge/damoreira.com-000000?style=for-the-badge&logo=googlechrome&logoColor=white)](https://damoreira.com)
 
 ---
 
